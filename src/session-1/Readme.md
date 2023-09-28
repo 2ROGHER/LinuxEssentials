@@ -106,6 +106,11 @@ Link para ver las diferentes distribucines de Linux:  https://www.distrowatch.co
 # --------- `Free software`--------------
 * `Es util pensarlo como software libre como libre de copiarlo, libre de modificarlo, libre de compartirlo.` 
 
+
+# ---------------- `El Zen de Linux` ----------------------
+
+* Se pueden realizar aplicaciones sencillas y proyectos sencillas de monitoreo usando recursos de sistemas  o dispostivos muy pequenios relamente eficientes.
+
 ## 1.4 Habilidades tecnincas en la TI
 * Varios ambientes visuales o graficos del SO. Mientras qeu en windows solo hay uno.
 * Entornos como `Deepin`
