@@ -22,7 +22,7 @@
 
 * Link del Kernel: https://www.kernel.org/
 ***sistema operativo*** (distribucion)
-![Alt text](image.png)
+![Alt text](../session-1/assets/img/image.png)
 
 ### Distribuciones de Linux
 Link para ver las diferentes distribucines de Linux:  https://www.distrowatch.com/
@@ -54,7 +54,7 @@ Link para ver las diferentes distribucines de Linux:  https://www.distrowatch.co
 * Es un sistemas de vitualizacion en los que puedo simular o `virtualizar` diferentes tipos de sistemas, es decir se descargan archivos y se pueden levantar como si fueran los sistemas operativos.
 
 * Descargar el `instalador` de Virtual Box.
-* Desacargar tambien: ![Alt text](image-1.png)
+* Desacargar tambien: ![Alt text](../session-1//assets/img/image-1.png)
 * Para poder comunicar las maquinas virtuales atraves de la red se genera otra `adaptador de red`.
 * Pasos: 
 
@@ -62,7 +62,7 @@ Link para ver las diferentes distribucines de Linux:  https://www.distrowatch.co
 * Nosotros trabajeremos con la distribucion de Ubuntu
 * Solo trabajaremos con `Ubuntu Desktop`.
 * Es necesario utilizar y aprender todos los comandos para trabajar en entornos de `servidores` en produccion con este hecho en el sistemsa operativo.
-* Setup de como agregar el nuevo SO con Virtual Box.![Alt text](image-2.png)
+* Setup de como agregar el nuevo SO con Virtual Box.![Alt text](../session-1/assets/img/image-2.png)
 ### Importante
 * Es importante poder emplear el uso de `nextCloud`
 * Tambien `Oncloud`
@@ -73,7 +73,7 @@ Link para ver las diferentes distribucines de Linux:  https://www.distrowatch.co
 
 * `Sistemas de gestion de paquetes en consola`
     Para actualizar paquetes.
-![Alt text](image-3.png)
+![Alt text](../session-1/assets/img/image-3.png)
 
 
 ## 1.3 Licencia de Software
