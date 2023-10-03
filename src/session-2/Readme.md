@@ -1,3 +1,5 @@
+# SERVIDORES DUROS DE ROER
+
 # Consideraciones finales: `Se va a realizar un servidor web con Linux`.
 ## 1. Consola de comandos
 * Un comando es un programa de software qeu al ejecutarlo en la `CLIiza` realiza una accion en la computadora
@@ -57,6 +59,38 @@
 ```bash
 ┌──(kali㉿kali)-[/usr/share/doc]
 └─$ 
-
 ```
 
+* `info top`: Muestra el manual del comando en formato grafico visible.
+* `cat`: para ver el contenido del archivo que se selecciona.
+* `clear`: borra o limpia la pantalla.
+* `->`: con la tecla `shift` se puede completar.
+* `ls -l`: Detalle de la lista a `detalle` con mas metadatos del file.
+* ``
+## 1.4 Comandos administracion de direcctorios y archivos
+
+* `cd`: para nevegar atravez de los directorios
+* `cd /home/share`: Ruta para ir al directorio `share`.
+* `pwd`: me permite ver la ruta en el que me encuentro
+* `mkdir`: me permite crear un nuevo directorio 
+* `cd ..`: permite navegar hacia atras en la ruta del directorio.
+* `rmdir`: me permite borrar el directorio que  se seleccione
+* `rmdir -r`: forzar la eliminacion de directorios
+* `mv ./demo ./documentos1`: mover todo el directorio `./demo` al `./documentos1`.
+* `sudo install <nombre_del_programa>`: nos sirve para intalar algun programa
+* `tree`: este comanod es util para
+* `head`: muestra las primeras lineas del archivo
+* `tail -n 1 <file>`: muestra las ultimas lineas del archivo.
+* `tail -n +5 <file>`: muestra las ultimas lineas a aparti rde la linea 5
+* `greap caracter <file>`: nos permite buscar un determinado caracter(inspeccionar) si existe en el archivo
+* `vi`: nos permite ver y editar el contenido de un archivo seleccionado.
+* `cmp <file1> <file2>`: permite compar dos archivos seleccionados si son iguales para poder verificar su autenticidad.
+* `diff`: permite ver en que lineas o en que parte del file se diferencian pra cerrar el file se usa el comando `:wq! + enter`.
+* `file <file>`: Este comando me permite verificar que tipo de file es este.
+* `lsof`: Este comando me puede mostrar todos los files habiertos y corriendo en el sistema
+* `mv`: Este comando tambien nos permite `editar` o cambiar el nombre del file no solo es para moverlo los files sino tambien para renombrarlo.
+* `vi <file_name> `: Nos permite crear un archivo nuevo o agregar contenido en este.
+* `sort`: este comando nos permite ordenar los elementos o el contenido de un file
+* `sort -r`: sort reverse
+* `sort frutas.txt > frutas_sorted.txt`: esto nos permite rederigir la salida  a una nueva archivo "frutas_sorted.txt"
+* `md5sum <file>`: este comanod nos permite agregar una firma digital a nuestro file. Es decir que se agregue una clave `hash` que lo diferencia del resto. Esto nos permite si cambiamos el nombre el clave hash no se modifica.Pero si cambiamos el contenido del file su hash tambien cambia.
