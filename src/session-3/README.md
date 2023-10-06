@@ -90,5 +90,88 @@
     # buscar un nombre en esepcifico en un archivo
     grep nara frutas.txt
 
+    # Para ver en que ruta esta un determinado programa
+    whereis firefox
+
+    # Esto nos sirve para saber cual es la ruta en el que se encuentra el  ejecutable del programa buscado.
+    which firefox
     
 ```
+
+# 2. Shell scripting
+
+* Esta es la parte mas poderoza e importante que tiene el sistema Linux
+* Este es un codigo informatico de codigo abierto diseniado pra ser ejecutado por el shell de Unix/Linux.
+* Es un termino de UNIX para una interfaz entre el  usuario y un servicio del sistema operativo
+* El `shell` es el lugar donde el usuario interactua con  los comando que proporciona el sistema `Linux`.
+* `Kernel`: Es la zona interna del SO que necesita un shell para interactuar.
+
+![Alt text](image.png)
+
+* La finalidda del `bash` scripting es `automatizar los procesos`.
+* Hay dos principales `shells` en Linux
+    * 1. `Bourne shell`: el indicador de este shell es `$` y sus derivados son :
+        * El shell de POSIX conocido como `sh`
+        * Korn Shell tambien conocida como `sh`
+        * Bourne Again Shell tambien conocida como `bash` es el mas popular y ampliamente utilizado.
+    * 2. `El shell C`: su indicador de este shell es `%`y se categoriza en: 
+        * C shell tambien se conoce como `csh`
+        * Tops C shell tambien se conoce como `tcsh`
+
+* comando para poder escribir en el editor `vi` presionar `i`(insert).
+*  Para entrar como `administrador` del sistema se tiene que usar el comando.
+
+```bash
+    $ sudo su
+```
+eg: 
+
+```bash
+    # 1. crear un file en el editor `vi`
+    $ vi demo.sh
+    # Abrimos el editor y digitamos `i` para poder editar
+
+    (#!/bin/shell) -->  esta es la cabecera que siempre debe tener un script de bash.
+
+    # 2. script de bash here: (nota: este script esta dentro del file 'demo1.sh')
+    name = "John Doe"
+    greeting = 'How are you'
+    echo "Hey  hello $name, $greeting"
+    # 3. para guardar presionar 'escape' + :wq + enter.
+
+    # 4. Ejecutar el archivo `bash` en el terminal de la siguente manera
+    $ bash demo1.sh # output: 'Hello World!'
+
+    # 5. entrada ade usuraio
+    # dentro del script
+    echo "Whats your name ? "
+    read name
+    echo "Hello, nice to meet you $name".
+
+
+```
+* Editor por defecto de `shell` es `vi`
+
+# 2. Loops en shell scripting
+
+* Generalmente este tipo de control de flujo va a ser necesario para realizar procesos `automatizados`.
+
+```bash
+    # dentro del archivo que se esta programando
+    # bucle `for`.
+
+    for i in iterator 1 2 3 4 5
+    do
+        echo "# generado: $i"
+        # crear directorios con nombre igual al iterador.
+        mkdir $i # antes de que salte el error se va a crear un directorio 'iterator'.
+    done
+    
+```
+
+# NOTA: 
+* El simbolo `$`: dependiendo del `bash` indica que eres el usuario
+* El simbolo `#`: indica que tienes privilegios de administrador
+
+
+* Linux me permite cambiar de un `shell` a otro
