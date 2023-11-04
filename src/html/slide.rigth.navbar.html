@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>slide navbar + html + css + js</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: "Poppins",sans-serif;
+        }
+        body {
+            position: relative;
+        }
+        .overlay {
+            height: 100%;
+            width: 0;
+            overflow: hidden;
+            position: absolute;
+            background: #111;
+            transition: width .5s linear;
+        }
+        .overlay .closebtn {
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            text-decoration:none;
+            color: #fff;
+            font-size: 50px;
+        }
+
+        .overlay-content {
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+
+        }
+        .overlay-content a {
+            color: #fff;
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 2.5rem 0;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .overlay-content a:hover {
+            background: rgb(4, 62, 4)
+        }
+
+    </style>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>Fullscreen Overlay Nav Example</h2>
+      <p>
+        Click on the element below to open the fullscreen overlay navigation
+        menu.
+      </p>
+      <p>
+        In this example, the navigation menu will slide in, from left to right:
+      </p>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776; open</span
+      >
+    </div>
+
+    <script>
+      function closeNav() {
+        document.getElementById('myNav').sytle.width = '0%';
+      }
+      function openNav() {
+        document.getElementById('myNav').style.width = '100%';
+      }
+    </script>
+  </body>
+</html>

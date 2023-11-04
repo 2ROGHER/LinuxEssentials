@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+        * { 
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav { margin-top: 1rem; }
+
+        .navbar {
+            background: #333;
+            font-family: "Poppins", sans-serif;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            text-decoration: none;
+            padding: 1rem 4rem;
+        }
+        .navbar a:hover {
+            background: #888;
+            color: #000;
+        }
+        .active { 
+            background: #094d09;
+        }
+
+        @media screen and (max-width: 900px) {
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+    <title>responsive + navbar + icons</title>
+  </head>
+  <body>
+    <h2>Responsive Navigation Bar with Icons</h2>
+    <p>Try to resize the browser window to see the responsive effect.</p>
+
+    <nav>
+      <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      </div>
+    </nav>
+  </body>
+</html>

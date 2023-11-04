@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sidenav + overlay + html + css3</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      .sidenav {
+        position: relative;
+        background: #333;
+        height: 100vh;
+        width: 0;
+        position: absolute;
+        background: #222;
+        overflow: hidden;
+        padding-top: 5rem;
+        transition: width .5s linear;
+      }
+      .sidenav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        display: block;
+      }
+      .contentside {
+        width: 100vw;
+        height: 100vh;
+        background: rgb(42, 42, 85);
+        padding: 2rem;
+      }
+
+      .closebtn {
+        position: absolute;
+        float: right;
+        top: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="contentside">
+      <h2>Animated Sidenav Example</h2>
+      <p>Click on the element below to open the side navigation menu.</p>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776; open</span
+      >
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "400px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = '0';
+      }
+    </script>
+  </body>
+</html>

@@ -200,8 +200,19 @@ Se puede realizar varias aplicaciones de red con el sistema operativo `Linuxd`.
     $ sudo ip route add default via 102.168.0.1
 
     $ ip rout show
-```
 
+    # COMANDOS BASICOS DE RED EN LINUX
+
+    # Listar la direccion IP
+    $ ip adrr
+
+    # Hacer ping a mi propio direccion IP
+    $ ping -6 | -4 <my_direction_ip>
+```
+* __Herramienta de Firewall sugerido y gratuito para SO Linux__
+![Alt text](image-7.png)
+* Interfaz que muestra la lista de IP.
+![Alt text](image-6.png)
 
 
 * Almacenamiento con particiones: 
