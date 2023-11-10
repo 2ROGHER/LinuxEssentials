@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bottom border + html + css</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .topnav {
+        position: relative;
+        overflow: hidden;
+        background: #222;
+        margin: 0 0 2rem 0;
+      }
+      .topnav a {
+        float: left;
+        padding: 1rem 3rem;
+        text-decoration: none;
+        color: #c9c7c7;
+      }
+      .topnav a:hover {
+        background: #393939;
+        color: #fff;
+        border-bottom: 3.5px solid var(--c);
+      }
+      .topnav a.active {
+        border-bottom: 3.5px solid var(--c);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home" style="--c: green">Home</a>
+      <a href="#news" style="--c: skyblue">News</a>
+      <a href="#contact" style="--c: tomato">Contact</a>
+    </div>
+
+    <div style="padding-left: 16px">
+      <h2>Border Links</h2>
+      <p>Hover over the links.</p>
+    </div>
+    <script>
+      let a = document.getElementsByTagName("a");
+      for (let i = 0; i < a.length; i++) {
+        a[i].addEventListener("click", function (e) {
+          for(let j = 0; j < a.length; j++) {
+            a[j].classList.remove('active');
+          }
+          e.target.className = 'active';
+          console.log(e.target);
+        });
+      }
+    </script>
+  </body>
+</html>

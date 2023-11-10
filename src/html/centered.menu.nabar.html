@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>centered + navbar + menu + css + html</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .topnav {
+            overflow: hidden;
+            position: relative;
+            background: #444;
+        }
+        .topnav div { 
+            float: left;
+            overflow: hidden;
+            padding: 1rem 0;
+            
+        }
+        .topnav div a {
+            padding: 1rem 3rem;
+            text-decoration: none;
+            color: #fff;
+        }
+        .topnav div a:hover {
+            background: #333;
+        }
+        .topnav-centered {
+            float: none;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            
+        }
+        .topnav .topnav-left {
+            float: left;
+        }
+        .topnav .topnav-right {
+            float: right;
+        }
+        .active { 
+            background: tomato;
+        }
+
+        @media  screen and (max-width: 1024px) {
+            .topnav {
+                background: red;
+            }
+            .topnav div {
+                float: none;
+                display: block;
+            }
+            .topnnav .topnav-centered {
+                position: relative;
+            }
+            .topnav div a {
+                text-align: center;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Top navigation -->
+    <div class="topnav">
+      <!-- Centered link -->
+      <div class="topnav-centered">
+        <a href="#home" class="active">Home</a>
+      </div>
+
+      <!-- Left-aligned links (default) -->
+      <div class="topnav-left">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Right-aligned links -->
+      <div class="topnav-right">
+        <a href="#search">Search</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+
+    <div style="padding-left: 16px">
+      <h2>Responsive Top Navigation with Centered and Right-Aligned Links</h2>
+      <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+  </body>
+</html>
